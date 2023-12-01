@@ -13,6 +13,31 @@ body {
   align-content: center;
 }
 
+#reroll {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin: 40px;
+}
+
+.rollBtn {
+  height: 50px;
+  color: white;
+  background-color: rgb(88, 85, 85);
+  font-size: 30px;
+  border-radius: 8px;
+  transition-duration: 0.2s;
+
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.rollBtn:hover{
+  background-color: rgb(17, 17, 17);
+}
+
 .cardName {
   text-align: center;
   justify-content: center;
