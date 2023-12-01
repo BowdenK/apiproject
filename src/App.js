@@ -35,7 +35,7 @@ const App = () => {
   if(!mtgCard) return <h1>loading...</h1>
   return (
     
-    <div>
+    <div className='base'>
       <div>
       <h1 className='MainTitle'>Magic The Gathering</h1>
       <h2 className='MainTitle'>Random Team Generator</h2>

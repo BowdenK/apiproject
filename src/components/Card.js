@@ -4,7 +4,7 @@ const Card = ({ spell, sum }) => {
 
     return (
         <div>
-            <h2>{spell.name}</h2>
+            <h2 className="cardName">{spell.name}</h2>
             <h2>{spell.rarity}</h2>
             <h2>{sum}</h2>
             <img src={spell.imageUrl} alt='No Image Available'></img>
