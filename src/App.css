@@ -1,3 +1,29 @@
 .App {
   text-align: center;
 }
+
+.MainTitle {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  display: flex;
+  background-color: rgb(47, 50, 53);
+  height: 600px;
+  justify-content: center;
+  justify-content: space-around;
+  /* align-items: center; */
+}
+
+img {
+  width: 200px;
+  height: auto;
+  margin: 4px;
+  transition: width 1s;
+}
+
+img:hover{
+  width: 300px;
+}
