@@ -6,6 +6,12 @@ const App = () => {
   const [dnd, setDnd] = useState('')
   let cardSum = 0;
 
+  // const mtg = require('mtgsdk')
+
+  // mtg.card.find(3)
+  // .then(result => {
+  //   console.log(result.card.name)
+  // })
 
   // const getDnd = async () => {
   //   const response = await fetch('https://www.dnd5eapi.co/api/classes/paladin/spells')
@@ -16,7 +22,7 @@ const App = () => {
   //   getDnd()
   // }, [])
   const getDnd = async () => {
-    const response = await fetch('https://api.magicthegathering.io/v1/cards')
+    const response = await fetch('https://api.magicthegathering.io/v1/cards?pageSize=3&random=true')
     const data = await response.json()
     setDnd(data)
   }
@@ -25,7 +31,7 @@ const App = () => {
   }, [])
 
 
-  // come back to this
+  // come back to this llll
   if(!dnd) return <h1>loading...</h1>
   return (
     
