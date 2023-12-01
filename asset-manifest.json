@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/BowdenK/apiproject/static/css/main.3cf8465f.css",
+    "main.js": "/BowdenK/apiproject/static/js/main.6e102214.js",
+    "index.html": "/BowdenK/apiproject/index.html",
+    "main.3cf8465f.css.map": "/BowdenK/apiproject/static/css/main.3cf8465f.css.map",
+    "main.6e102214.js.map": "/BowdenK/apiproject/static/js/main.6e102214.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3cf8465f.css",
+    "static/js/main.6e102214.js"
+  ]
+}
