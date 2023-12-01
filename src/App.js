@@ -6,9 +6,9 @@ import Button from './components/Button';
 const App = () => {
   const [mtgCard, setmtgCard] = useState('')
   let cardSum = 0;
-  
+
   const getmtgCard = async () => {
-    const response = await fetch('https://api.magicthegathering.io/v1/cards?pageSize=7&random=true')
+    const response = await fetch('https://api.magicthegathering.io/v1/cards?pageSize=7&random=true&contains=imageUrl')
     const data = await response.json()
     setmtgCard(data)
   }
@@ -16,14 +16,14 @@ const App = () => {
     getmtgCard()
   }, [])
 
-  const getOneMtgCard = async () => {
-    const response = await fetch('https://api.magicthegathering.io/v1/cards?pageSize=1&random=true')
-    const data = await response.json()
-    setmtgCard(data)
-  }
-  useEffect(() => {
-    getOneMtgCard()
-  }, [])
+  // const getOneMtgCard = async () => {
+  //   const response = await fetch('https://api.magicthegathering.io/v1/cards?pageSize=1&random=true')
+  //   const data = await response.json()
+  //   setmtgCard(data)
+  // }
+  // useEffect(() => {
+  //   getOneMtgCard()
+  // }, [])
 
 
   // come back to this llll
@@ -39,27 +39,21 @@ const App = () => {
         </div>
       </div>
       <div className='container'>
-        {mtgCard.cards.map((spell, index) => {
+        {mtgCard.cards.map((cardStats, index) => {
           cardSum++;
-          return <Card spell={spell} sum={cardSum}/>
+          return <Card cardStats={cardStats} sum={cardSum}/>
         })}
       </div>
-      <p>Todo List</p>
-        <ul>
-          <li>Styling</li>
-          <li>Add Re-roll button</li>
-          <li>No image message, or re-roll card</li>
-          <li>Add a second team?</li>
-          <li>roll custom number of cards?</li>
-          <li>Enlarge card on mouse over</li>
-          <li></li>
-        </ul>
-      <div className="App">
-      <header className="App-header">        
-        <p></p>        
-        <p></p>        
-      </header>
-    </div>
+        <p>Todo List</p>
+          <ul>
+            <li>Styling</li>
+            <li>Add Re-roll button</li>
+            <li>No image message, or re-roll card</li>
+            <li>Add a second team?</li>
+            <li>roll custom number of cards?</li>
+            <li>Enlarge card on mouse over</li>
+            <li></li>
+          </ul>
     </div>
   )
 }
