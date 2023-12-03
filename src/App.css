@@ -7,6 +7,12 @@ body {
   color: white;
 }
 
+.base {
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url('images/forest.jpg');;
+}
+
 .MainTitle {
   text-align: center;
   justify-content: center;
@@ -61,7 +67,7 @@ body {
 
 .container {
   display: flex;
-  background-color: rgb(47, 50, 53);
+  background-color: rgba(22, 22, 22, 0.5);
   height: 600px;
   justify-content: center;
   justify-content: space-around;
@@ -87,16 +93,20 @@ img:hover{
 
 .Common {
   color: black;
+  text-shadow: 1px 1px 2px rgb(255, 255, 255), 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
 }
 
 .Uncommon{
   color:rgb(190, 190, 171);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(12, 12, 12), 0 0 5px rgb(19, 19, 19);
 }
 
 .Rare {
   color:gold;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
 }
 
 .Mythic {
   color:rgb(255, 102, 0);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(255, 255, 255);
 }

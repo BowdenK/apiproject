@@ -1,8 +1,8 @@
 import Button from "./Button"
-import {React,useState}  from "react";
+import {React,useState,useEffect}  from "react";
 
 const Counter = ({sizeChanger, size}) => {
-    const [teamSize, setTeamSize] = useState(7)
+    const [teamSize, setTeamSize] = useState(size)
 
     {if(teamSize < 1){setTeamSize(1)}}
     {if(teamSize > 10){setTeamSize(10)}}
@@ -16,6 +16,11 @@ const Counter = ({sizeChanger, size}) => {
         setTeamSize(teamSize + 1);
         sizeChanger(teamSize);
     }
+
+    // useEffect(() => {
+    //     handleDecrement();
+    //     handleIncrement();
+    // },[teamSize,setTeamSize])
 
     return (
         <div className="Controls">

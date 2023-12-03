@@ -6,7 +6,7 @@ import Counter from './components/Counter';
 
 const App = () => {
   const [mtgCard, setmtgCard] = useState('')
-  const [size, setSize] = useState(10)
+  const [size, setSize] = useState(4)
   let cardSum = 0;
   
 
