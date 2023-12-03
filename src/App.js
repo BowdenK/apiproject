@@ -1,14 +1,16 @@
 import './App.css';
-import { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import Card from './components/Card';
 import Button from './components/Button';
 import Counter from './components/Counter';
 
 const App = () => {
   const [mtgCard, setmtgCard] = useState('')
-  const [size, setSize] = useState(4)
+  const [size, setSize] = useState(7)
   let cardSum = 0;
   
+  {if(size < 1){setSize(1)}}
+  {if(size > 10){setSize(10)}}
 
   const getmtgCard = async () => {
     const response = await fetch('https://api.magicthegathering.io/v1/cards?pageSize=' + size + '&contains=imageUrl&random=true')
@@ -20,8 +22,9 @@ const App = () => {
   }
   useEffect(() => {
     getmtgCard()
-  }, [])
-
+    
+    console.log(size)
+  },[])
   
   if(!mtgCard) return <h1>loading...</h1>
   return (
@@ -32,10 +35,16 @@ const App = () => {
         <h2 className='MainTitle'>Random Team Generator</h2>
         <div className='Controls'>
           <h3>Team Size:</h3>
-          <Counter sizeChanger={setSize} size={size}/>
+          <Counter 
+            sizeChanger={setSize} 
+            size={size}/>
         </div>
         <div id='reroll'>
-          <Button className='rollBtn' func={getmtgCard} text='Roll Team' style='rollBtn'></Button>
+          <Button 
+            className='rollBtn' 
+            func={getmtgCard} 
+            text='Roll Team' 
+            style='rollBtn'></Button>
         </div>
       </div>
       <div className='container'>
@@ -50,10 +59,10 @@ const App = () => {
         <p>Todo List</p>
           <ul>
             <li>Styling</li>
-            <li>Add Re-roll button for each individual card</li>
-            <li>add fonts and nice background image</li>
+            {/* <li>Add Re-roll button for each individual card</li> */}
             <li></li>
-            <li>roll custom number of cards?</li>
+            <li></li>
+            <li></li>
             <li>Bug: card name can push down image if too long</li>
             <li></li>
           </ul>

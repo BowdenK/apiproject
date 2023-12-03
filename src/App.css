@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+
 .App {
   text-align: center;
 }
@@ -11,6 +13,11 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-image: url('images/forest.jpg');;
+}
+
+h1, h2 {
+  font-family: 'Metamorphous', serif;
+  font-weight: bolder;
 }
 
 .MainTitle {
@@ -98,7 +105,7 @@ img:hover{
 
 .Uncommon{
   color:rgb(190, 190, 171);
-  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(12, 12, 12), 0 0 5px rgb(19, 19, 19);
+  text-shadow: 1px 1px 2px rgb(15, 155, 236), 0 0 25px rgb(28, 218, 231), 0 0 5px rgb(19, 19, 19);
 }
 
 .Rare {
