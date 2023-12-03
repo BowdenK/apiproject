@@ -34,7 +34,22 @@ body {
 
 }
 
-.rollBtn:hover{
+.sqrBtn {
+  height: auto;
+  width: 50px;
+  color: white;
+  background-color: rgb(88, 85, 85);
+  font-size: 30px;
+  border-radius: 8px;
+  transition-duration: 0.2s;
+  margin: 10px;
+
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.rollBtn:hover, .sqrBtn:hover{
   background-color: rgb(17, 17, 17);
 }
 
@@ -53,6 +68,12 @@ body {
   /* align-items: center; */
 }
 
+.Controls {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
 img {
   width: 200px;
   height: auto;
@@ -62,4 +83,20 @@ img {
 
 img:hover{
   width: 300px;
+}
+
+.Common {
+  color: black;
+}
+
+.Uncommon{
+  color:rgb(190, 190, 171);
+}
+
+.Rare {
+  color:gold;
+}
+
+.Mythic {
+  color:rgb(255, 102, 0);
 }
