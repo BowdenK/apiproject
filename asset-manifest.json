@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/BowdenK/apiproject/static/css/main.3cf8465f.css",
-    "main.js": "/BowdenK/apiproject/static/js/main.6e102214.js",
-    "index.html": "/BowdenK/apiproject/index.html",
-    "main.3cf8465f.css.map": "/BowdenK/apiproject/static/css/main.3cf8465f.css.map",
-    "main.6e102214.js.map": "/BowdenK/apiproject/static/js/main.6e102214.js.map"
+    "main.css": "/apiproject/static/css/main.fbe43b8e.css",
+    "main.js": "/apiproject/static/js/main.ba000b24.js",
+    "static/media/forest.jpg": "/apiproject/static/media/forest.169dacc95cb3bc8e20b8.jpg",
+    "index.html": "/apiproject/index.html",
+    "main.fbe43b8e.css.map": "/apiproject/static/css/main.fbe43b8e.css.map",
+    "main.ba000b24.js.map": "/apiproject/static/js/main.ba000b24.js.map"
   },
   "entrypoints": [
-    "static/css/main.3cf8465f.css",
-    "static/js/main.6e102214.js"
+    "static/css/main.fbe43b8e.css",
+    "static/js/main.ba000b24.js"
   ]
 }
